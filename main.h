@@ -9,5 +9,6 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _puts(char *s);
+int print_int(int n);
 
 #endif

@@ -34,6 +34,14 @@ int _printf(const char *format, ...)
 					j += _putchar('%');
 					x += 2;
 					break;
+				case 'i':
+				case 'd':
+					j += print_int(va_arg(ap, int));
+					x += 2;
+					break;
+				default:
+					j += _putchar(*format);
+					break;
 			}
 			continue;
 		}
@@ -72,4 +80,31 @@ int _puts(char *s)
 	}
 	return (i);
 
+}
+
+/**
+* print_int - prints integer value
+* @n: integer to be printed
+*
+*Return: returns the value of x
+*/
+
+int print_int(int n)
+{
+	int x = 0;
+
+	if (n < 0)
+	{
+		x += _putchar('-');
+		n = -n;
+	}
+
+	if (n / 10)
+	{
+		x += print_int(n / 10);
+	}
+
+	x += _putchar(n % 10 + '0');
+
+	return (x);
 }
