@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_binary - this function prints given integer in binary
+* print_b - this function prints given integer in binary
 * @bin_listing: input parameter, containing integer
 * value to be printed in binary
 *

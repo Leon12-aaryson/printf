@@ -26,6 +26,11 @@ int print_c(va_list ap);
 int print_s(va_list ap);
 int print_d(va_list ap);
 int print_i(va_list ap);
+int print_u(va_list ap);
+int print_o(va_list ap);
+int print_x(va_list ap);
+int print_X(va_list ap);
+int print_p(va_list ap);
 int (*get_function(char s))(va_list ap);
 
 #endif

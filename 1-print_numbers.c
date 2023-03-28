@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_int - prints intege value - %d
+* print_d - prints intege value - %d
 * @ap: variable argument list containing integer value to be printed
 *
 * Return: count of numbers printed
@@ -41,7 +41,7 @@ int print_d(va_list ap)
 }
 
 /**
-* print_int2 -prints the integers (%i)
+* print_i - prints the integers (%i)
 * @ap: variable argument list
 * Return: numbers printed
 *
